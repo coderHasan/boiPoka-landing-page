@@ -1,14 +1,13 @@
-import React from "react";
-import NavBar from "./components/Navbar/NavBar";
-import Footer from "./components/Footer/Footer";
 import { Outlet } from "react-router-dom";
+import Navber from "./components/Navber";
 
 const App = () => {
   return (
     <>
-      <NavBar></NavBar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <header className="py-4">
+        <Navber />
+        <Outlet />
+      </header>
     </>
   );
 };
